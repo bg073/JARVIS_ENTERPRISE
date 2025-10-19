@@ -1,0 +1,68 @@
+Databases are organized collections of data that can be easily accessed,
+managed, and updated. They form the backbone of most software systems,
+enabling efficient data storage and retrieval.
+
+1.  Introduction to Databases A database is a structured set of data
+    held in a computer, especially one that is accessible in various
+    ways. Databases are used in almost every area — banking, e-commerce,
+    healthcare, education, and more.
+
+2.  Types of Databases
+
+-   Relational Databases (RDBMS): Store data in tables with
+    relationships (e.g., MySQL, PostgreSQL).
+-   NoSQL Databases: Handle unstructured data (e.g., MongoDB,
+    Cassandra).
+-   In-Memory Databases: Store data in main memory for faster access
+    (e.g., Redis).
+-   Graph Databases: Represent data as nodes and relationships (e.g.,
+    Neo4j).
+
+3.  Database Management Systems (DBMS) A DBMS is software that manages
+    databases. It handles data definition, manipulation, and control.
+    Examples: Oracle, MySQL, SQL Server, PostgreSQL, SQLite.
+
+4.  SQL: Structured Query Language SQL is the standard language for
+    interacting with relational databases. Key commands include:
+
+-   SELECT: Retrieve data from tables.
+-   INSERT: Add new data.
+-   UPDATE: Modify existing data.
+-   DELETE: Remove data.
+-   CREATE TABLE: Define new tables.
+
+Example: SELECT name, age FROM students WHERE grade > 80;
+
+5.  Database Normalization Normalization organizes data to reduce
+    redundancy and improve integrity. Common forms include:
+
+-   1NF: Eliminate repeating groups.
+-   2NF: Remove partial dependencies.
+-   3NF: Remove transitive dependencies.
+
+6.  Indexing and Keys Indexes speed up queries, while keys (Primary,
+    Foreign, Unique) maintain data consistency.
+
+-   Primary Key: Uniquely identifies a record.
+-   Foreign Key: Establishes relationship between tables.
+
+7.  Transactions and ACID Properties Transactions ensure reliable
+    database operations with the following properties:
+
+-   Atomicity: All-or-nothing execution.
+-   Consistency: Maintain valid data state.
+-   Isolation: Transactions don’t interfere.
+-   Durability: Results persist after completion.
+
+8.  Backup and Recovery Regular backups protect against data loss.
+    Recovery mechanisms restore data in case of system failure.
+
+9.  Security and Permissions Database security includes authentication,
+    authorization, encryption, and auditing.
+
+10. Emerging Trends Modern databases support cloud scalability,
+    distributed systems, and AI-driven optimization.
+
+Conclusion Databases are fundamental to data-driven systems.
+Understanding how they store, manage, and protect information is crucial
+for software development and data science.

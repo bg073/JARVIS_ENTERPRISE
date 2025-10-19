@@ -1,0 +1,66 @@
+1) Smart Access
+A.) This has to go as described below
+
+When_User_registered -> give basic all employee acess (custom mail, access to software's and stuff) -> when assgined to project -> give access to that information (exmaple DB, PAPERS, FOOTAGE, COMMUNICATION GATES, etc) -> when a behaviour is not normal (eg: old behaviour: opens and clicks something naviagtes and see for notifications. new behaviour has not matched well with routine) -> Block User and report to admin.
+
+Main Things for this:
+Controlled access for giving and removing access: to DB, communication things and all those (has to be like a physical entity) watching but less resource-intensive. MORE ABOUT THIS IN 3 and 5
+
+Has to Build:
+i.) a reasoning system to find what user is requesting and what privilages to give based on training data
+ii.) MCP to call tools to create accounts, email on initial onborading.
+iii.) A behaviour analysis model that updates regularly on weekends
+
+END:
+Has to send all data to main jarvis to store and retive all info (behavior: including Typing patterns, Login actions, main activity after login etc) . 
+
+2) AI Interviewer + Question Coach
+A.) This has to go as described below
+
+When call is confirmed -> get resume + certifications and stuff -> join or see screen of interviewer -> use analytical model to monitor user, suggest questions && use TTS to convert text to speech -> later give feedback on user.
+
+Has to Build:
+i.) A ML model to get all user facial focal points, eye contact (can use open source model instead if needed)
+ii.) A ML model to identify gaps in speech and physical interactions to identify (valid INFO)
+iii.) local (temp) internal Interview server: this will include roles available, people applied for that position, ideal candidate description with qualifications or anything  
+
+END:
+Has to send all info about this guy using a embedding score to local (temp) internal Interview server where people is rank against the role and the best is found out when all interviews end. (OSINT is required when needed (if). ) all other data is deleted for good.
+
+
+3) Performance Meter
+A.) This has to go as described below
+
+This is so complex and has multiple system entry points 
+entry point anything -> does it job return required output-> gets to dashboard to update that task.
+
+Below is some subsystems:
+
+Technical people:
+i.) coders, testers, etc
+
+entry point a code or anything -> observes what employee does and in what time, keeps track of every commit and reviews code to find what is what (maybe good approach or bad to question), maybe document as well -> give a quality rating for day and updates employee task when a milestone is reached, it will return and call the larger model to update a bigger task on main project dashboard
+
+ii.) HR People etc
+
+Entry point anything on screen -> observes what he or she does why not observing the entire screen every sec -> updates hi self dashboard and main one when reached a Milestone.
+
+but all this cause a privacy concern so we will have a rules list, that blocks access to certain apps, websites and all.
+but records the time spent.
+
+this even records all email reports and all decisons made in meetings and stuff but we restrict access to email based a model
+
+Has to Build: 
+i.) a Model to see compare and  give a code quality rating or employee quality rating, can use commits and more stats
+ii.) a Model to see emails that are personal and block then using masking from the main LLM model
+iii.) a Model to compare work of non technical teams, and give rating
+iv.) a Model to see meeting and log the key decisions made by people and summarize meeting as well
+
+END:
+Has to send all of the key decision to main jarvis
+Has to send performance ratings of that user to that space
+
+
+4.) Skill DNA Mapping
+
+Summary: nothing much but based on performance, projects worked before, how fast they are, how effecient they are, their exp, connections, work ethic and all that information is stored here based on analysis performed after each week or month or manual tigger

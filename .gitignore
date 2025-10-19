@@ -1,0 +1,27 @@
+# ---- ML/AI additions ----
+# Model checkpoints and weights
+RAG/Models/
+checkpoints/
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.onnx
+*.tflite
+*.bin
+
+# Datasets and outputs
+data/
+datasets/
+output/
+*.csv
+*.json
+*.npz
+*.npy
+
+# Experiment tracking directories
+wandb/
+mlruns/
+tensorboard/
+events.out.tfevents.*
+

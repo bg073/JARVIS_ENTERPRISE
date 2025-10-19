@@ -1,0 +1,35 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.0
+python-dotenv>=1.0.1
+
+# Embeddings / Reranking
+sentence-transformers>=3.0.1
+transformers>=4.44.0
+torch>=2.3.0
+accelerate>=0.33.0
+
+# Vector DB / Search / Cache
+qdrant-client>=1.9.0
+opensearch-py>=2.6.0
+redis>=5.0.6
+
+# Parsing
+pymupdf>=1.24.7
+python-docx>=1.1.2
+beautifulsoup4>=4.12.3
+lxml>=5.2.2
+trafilatura>=1.11.0
+
+# Database
+pg8000>=1.31.2
+
+# Utilities
+numpy>=1.26.4
+scipy>=1.13.1
+scikit-learn>=1.5.1
+
+# Evaluation (optional, enabled later)
+# ragas>=0.1.9
+# deepeval>=0.20.36
+# trulens-eval>=1.0.0

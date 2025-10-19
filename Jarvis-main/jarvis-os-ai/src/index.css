@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 222 47% 5%;
+    --foreground: 195 100% 95%;
+
+    --card: 222 45% 8%;
+    --card-foreground: 195 100% 95%;
+
+    --popover: 222 47% 6%;
+    --popover-foreground: 195 100% 95%;
+
+    --primary: 195 100% 50%;
+    --primary-foreground: 222 47% 5%;
+    --primary-glow: 195 100% 60%;
+
+    --secondary: 220 40% 15%;
+    --secondary-foreground: 195 100% 95%;
+
+    --muted: 220 30% 12%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 195 100% 45%;
+    --accent-foreground: 222 47% 5%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 195 100% 95%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 195 100% 95%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 222 47% 5%;
+
+    --border: 220 30% 18%;
+    --input: 220 30% 18%;
+    --ring: 195 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 195 100% 90%;
+    --sidebar-primary: 195 100% 50%;
+    --sidebar-primary-foreground: 222 47% 5%;
+    --sidebar-accent: 220 40% 15%;
+    --sidebar-accent-foreground: 195 100% 90%;
+    --sidebar-border: 220 30% 18%;
+    --sidebar-ring: 195 100% 50%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(195 100% 50%) 0%, hsl(210 100% 60%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(222 45% 8%) 0%, hsl(222 45% 10%) 100%);
+    --gradient-glow: radial-gradient(circle at 50% 0%, hsl(195 100% 50% / 0.15) 0%, transparent 70%);
+
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(195 100% 50% / 0.3);
+    --shadow-card: 0 4px 20px hsl(222 47% 3% / 0.4);
+    --shadow-elevated: 0 8px 40px hsl(222 47% 3% / 0.6);
+    --shadow-neon: 0 0 10px hsl(195 100% 50% / 0.5), 0 0 20px hsl(195 100% 50% / 0.3), 0 0 30px hsl(195 100% 50% / 0.1);
+    --shadow-deep: 0 20px 60px hsl(222 47% 3% / 0.8), inset 0 1px 0 hsl(195 100% 50% / 0.1);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
